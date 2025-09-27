@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Destinations — Sahan Themiya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Base */
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #0f172a; background: #fff; font-family: 'Poppins', Arial, sans-serif; line-height: 1.8; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    /* Header */
+    header { position: absolute; top: 0; left: 0; width: 100%; z-index: 10; padding: 16px 0; }
+    .nav { display: flex; align-items: center; justify-content: space-between; }
+    .brand, nav a { color: #fff; }
+    .brand { font-weight: 600; letter-spacing: .3px; }
+    nav a { margin-left: 18px; }
+    nav a.active { border-bottom: 2px solid #fff; padding-bottom: 2px; }
+
+    .hero {
+      min-height: 100vh;
+      display: grid; place-items: center; text-align: center; color: #fff;
+      background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('images/c84cfcab97cdde173e1d104cfccf3e8e.jpg') center/cover no-repeat;
+      padding: 24px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem; margin: 0 0 10px;
+    }
+    .kicker { text-transform: uppercase; letter-spacing: .18em; font-size: .9rem; opacity: .95; }
+    .sub { max-width: 760px; margin: 0 auto; opacity: .95; }
+
+    /* Card grid */
+    main { padding: 56px 0 72px; }
+    .grid {
+      padding: 24px 0;
+      display: grid; gap: 24px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .card {
+      background: #fff; border: 1px solid #eee; border-radius: 12px; overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,.04); transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(0,0,0,.15); }
+    .thumb { position: relative; height: 340px; overflow: hidden; }
+    .thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .label {
+      position: absolute; top: 12px; left: 12px;
+      background: rgba(255,255,255,.9); color: #0f172a;
+      padding: 6px 10px; border-radius: 999px; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase;
+    }
+    .content { padding: 16px 18px 18px; }
+    .content h2 { margin: 0 0 6px; font-family: 'Playfair Display', serif; font-size: 1.5rem; }
+    .meta { color: #64748b; margin: 0 0 10px; font-size: .95rem; }
+    .content p { margin: 0 0 10px; }
+    .content ul { margin: 8px 0 0 18px; }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(135deg,  #334155 0%, #1f2937 30%, #0f172a 100%);
+      color: #fff;
+    }
+    footer .contact {
+      background: transparent; padding: 44px 0;
+    }
+    .contact-grid {
+      display: grid; gap: 24px; grid-template-columns: 1.2fr 1fr 1fr 1fr; align-items: start;
+    }
+    .contact h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin: 0 0 8px; }
+    .contact p { margin: 0; opacity: .9; }
+    .contact-item span { display: block; font-size: .9rem; opacity: .8; margin-bottom: 6px; }
+    .contact-item a { color: #fff; border-bottom: 1px solid rgba(255,255,255,.4); padding-bottom: 2px; }
+    .contact-item a:hover { border-color: #fff; }
+    .foot-bottom { border-top: 1px solid rgba(255,255,255,.12); color: #94a3b8; font-size: .95rem; padding: 16px 0; text-align: center; background: linear-gradient(135deg, #334155 0%, #1f2937 30%, #0f172a 100%); }
+
+    
+    @media (max-width: 1020px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 680px)  { .grid { grid-template-columns: 1fr; } .hero h1 { font-size: 2.4rem; } }
+    @media (max-width: 960px)  { .contact-grid { grid-template-columns: 1fr; text-align: center; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="about.html">Themi’s Travel Diary</a>
+      <nav>
+        <a href="about.html">About</a>
+        <a class="active" href="destinations.html">Destinations</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <section class="hero">
+    <div class="container">
+      <div class="kicker">Travel Stories</div>
+      <h1>Destinations</h1>
+      <p class="sub">Surfy sunrises, heritage lanes, and misty highlands — a few favorites from Sri Lanka.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="grid">
+      <article class="card">
+        <div class="thumb">
+          <img src="images/da65661ff36d2a9e3113b7086a53da1f.jpg" alt="Golden surf and blue waters at Arugambay, Sri Lanka">
+          <div class="label">Sri Lanka · East Coast</div>
+        </div>
+        <div class="content">
+          <h2>Arugambay, Sri Lanka</h2>
+          <p class="meta">Beaches • Surf • Sunrise</p>
+          <p>A laid-back surf town with golden beaches and a vibrant sunrise scene. Peak season brings world-class breaks and easygoing beach cafes.</p>
+          <h3>Highlights & Activities</h3>
+          <ul>
+            <li>Catch waves at Main Point or Whiskey Point</li>
+            <li>Sunrise hike to Elephant Rock viewpoint</li>
+            <li>Pottuvil Lagoon safari (birds and crocodiles)</li>
+            <li>Fresh seafood and roti at beachfront cafes</li>
+            <li>Sunset yoga or chill on the sand</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb">
+          <img src="images/bb96435b01794805c090806f3d54893a.jpg" alt="Sunset over the ramparts and lighthouse at Galle Fort, Sri Lanka">
+          <div class="label">Sri Lanka · South Coast</div>
+        </div>
+        <div class="content">
+          <h2>Galle, Sri Lanka</h2>
+          <p class="meta">UNESCO Fort • Heritage • Coastal City</p>
+          <p>A charming coastal city centered around the Dutch-built Galle Fort. Cobblestone lanes, sea-battered ramparts, lighthouses, and cozy cafes make it timeless.</p>
+          <h3>Highlights & Activities</h3>
+          <ul>
+            <li>Golden-hour walk along the Fort ramparts</li>
+            <li>Visit Galle Lighthouse and Meeran Mosque</li>
+            <li>Explore museums and Dutch Reformed Church</li>
+            <li>Gelato and kottu along Pedlar Street</li>
+            <li>Day trip to Unawatuna or Jungle Beach</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb">
+          <img src="images/1a656f303935c44446ef3e7371ebc379.jpg" alt="Misty meadows and cloud forest at Chariot Path, Sri Lanka">
+          <div class="label">Sri Lanka · Highlands</div>
+        </div>
+        <div class="content">
+          <h2>Chariot Path, Sri Lanka</h2>
+          <p class="meta">Highlands • Hike • Cloud Forest</p>
+          <p>A serene highland meadow near Nuwara Eliya with sweeping views and Ramayana folklore. Best explored early morning when the mist lifts.</p>
+          <h3>Highlights & Activities</h3>
+          <ul>
+            <li>Forest trail leading to open grasslands</li>
+            <li>Sunrise panoramas on clear days</li>
+            <li>Wildflowers, birdlife, and cool mountain air</li>
+            <li>Quiet picnic spots (leave no trace)</li>
+            <li>Layer up — temperatures can be crisp</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer with contact info -->
+  <footer>
+    <section class="contact">
+      <div class="container contact-grid">
+        <div>
+          <h3>Let’s connect</h3>
+          <p>Questions, tips, or collabs — I’d love to hear from you.</p>
+        </div>
+        <div class="contact-item">
+          <span>Email</span>
+          <a href="mailto:girihagamasahan@gmail.com">girihagamasahan@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span>Mobile</span>
+          <a href="tel:+94701287660">+94 70 128 7660</a>
+        </div>
+        <div class="contact-item">
+          <span>Instagram</span>
+          <a href="https://instagram.com/_.Themiya._" target="_blank" rel="noopener">@_.Themiya._</a>
+        </div>
+      </div>
+    </section>
+    <div class="foot-bottom">© 2025 Sahan Themiya · Keep exploring.</div>
+  </footer>
+</body>
+</html>
